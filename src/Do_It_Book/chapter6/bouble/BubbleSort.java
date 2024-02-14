@@ -1,5 +1,10 @@
 package Do_It_Book.chapter6.bouble;
 
+import java.util.Scanner;
+
+/*
+비교,교환을 패스(pass)라고 부른다.
+ */
 public class BubbleSort {
 
     static void swap(int[] a,int idx1, int idx2){
@@ -13,5 +18,25 @@ public class BubbleSort {
             for (int j = n-1; j>i;j--)
                 if (a[j-1]>a[j])
                     swap(a, j-1,j);
+    }
+
+    public static void main(String[] args) {
+        Scanner stdIn = new Scanner(System.in);
+
+        System.out.println("버블 정렬(버전1)");
+        System.out.print("요솟수: ");
+        int nx = stdIn.nextInt();
+        int[] x= new int[nx];
+
+        for (int i =0; i<nx;i++){
+            System.out.print("x["+i+"]: ");
+            x[i] = stdIn.nextInt();
+        }
+
+        bubbleSort(x,nx);
+
+        System.out.println("오름차순으로 정렬");
+        for (int i =0;i<nx; i++)
+            System.out.println("x["+i+"]="+x[i]);
     }
 }

@@ -1,4 +1,4 @@
-package Do_It_Book.chpater4.Queqe;
+package Do_It_Book.chapter4.Queqe;
 
 /**
  * 큐를 이용한 알고리즘

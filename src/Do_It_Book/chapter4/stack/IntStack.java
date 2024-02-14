@@ -1,4 +1,4 @@
-package Do_It_Book.chpater4.stack;
+package Do_It_Book.chapter4.stack;
 
 /**
  * 스택을 데이터 입출력방법

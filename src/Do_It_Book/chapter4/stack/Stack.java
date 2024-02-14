@@ -1,4 +1,4 @@
-package Do_It_Book.chpater4.stack;
+package Do_It_Book.chapter4.stack;
 
 public class Stack<E> {
     private E[] stk;				// 스택용 배열

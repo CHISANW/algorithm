@@ -1,6 +1,6 @@
 package Do_It_Book.chapter5.recursion;
 
-import Do_It_Book.chpater4.stack.IntStack;
+import Do_It_Book.chapter4.stack.IntStack;
 
 import java.util.Scanner;
 
