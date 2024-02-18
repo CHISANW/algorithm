@@ -4,9 +4,9 @@ import java.io.*;
 import java.util.StringTokenizer;
 
 /**
- * 문제번호 11021번
+ * 문제번호 11022번
  */
-public class AplusBminus7 {
+public class AplusBminus8 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -18,7 +18,7 @@ public class AplusBminus7 {
           st= new StringTokenizer(br.readLine(), " ");
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
-            bw.write("Case #"+i+": " +(a+b)+"\n");
+            bw.write("Case #"+i+": "+a+" + "+b+" = "+(a+b)+"\n");
         }
 
         br.close();
