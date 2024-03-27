@@ -46,6 +46,11 @@ public class IntQueueTester {
                 case 4:
                     queue.dump();
                     break;
+                case 5:
+                    System.out.print("찾으려는 값을 입력하세요");
+                    int i = stdIn.nextInt();
+                    int search = queue.search(i);
+                    System.out.println("찾으시는 값은 "+search+"에 있습니다.");
 
             }
         }

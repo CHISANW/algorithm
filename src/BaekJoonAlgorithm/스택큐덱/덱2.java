@@ -69,21 +69,21 @@ public class 덱2 {
             capacity=max;
             deck= new int[capacity];
         }
-
+        //덱의 맨앞에 데이터를 인큐
         public void enqueFront(int x){
             num++;
             if (--front<0)
                 front=capacity-1;
             deck[front] =x;
         }
-
+        //덱의 맨뒤 데이터를 인큐
         public void enqueRear(int x){
             deck[rear++]=x;
             num++;
             if (rear==capacity)
                 rear=0;
         }
-
+        //덱의 맨앞에서 데이터를 디큐
         public int dequeFront(){
             if (num<=0){
                 return -1;
@@ -95,7 +95,7 @@ public class 덱2 {
             num--;
             return x;
         }
-
+        //덱의 맨뒤에서 데이터를 디큐
         public int dequeRear(){
             if (num<=0){
                 return -1;
@@ -106,18 +106,18 @@ public class 덱2 {
             num--;
             return x;
         }
-
+        //--- 덱에 쌓여있는 데이터수를 반환합니다 ---//
         public int size(){
             return num;
         }
-
+        //--- 덱이 비어 있는가? ---//
         public int empty(){
             if (num<=0)
                 return 1;
             else
                 return 0;
         }
-
+        //--- 덱의 맨앞 데이터를 피크(맨앞 데이터를 들여다봄 ) ---*/
         public int peekFront(){
             if (num<=0){
                 return -1;
@@ -125,7 +125,7 @@ public class 덱2 {
             return deck[front];
 
         }
-
+        //--- 덱의 맨끝에서 데이터를 피크(맨끝 데이터를 들여다봄 ) ---*/
         public int peekRear(){
             if (num<=0){
                 return -1;

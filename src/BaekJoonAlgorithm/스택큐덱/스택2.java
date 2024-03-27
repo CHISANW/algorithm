@@ -46,15 +46,13 @@ public class 스택2 {
         System.out.println(sb);
     }
 
-    static class Stack{
-        private int[] arr;
-        private int ptr;
-        private int capacity;
+    public static class Stack{
+        private int[] arr;      // 스택용 배열
+        private int ptr;        // 스택 현재 위치
 
         public Stack(int x){
             ptr=0;
-            capacity = x;
-            arr=new int[capacity];
+            arr=new int[x];     //스택배열 생성
         }
         public int push(int x){     //1번
             return arr[ptr++]= x;

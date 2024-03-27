@@ -26,11 +26,11 @@ public class BinarySearchTester {
         System.out.print("검색할 값");
         int key = stdIn.nextInt();
 
-        int search = Arrays.binarySearch(x,key);
+        int search = Arrays.binarySearch(x,key); // -x -1
 
         if (search == -1){
             System.out.println("값이 없습니다.");
         }else
-            System.out.println("선택한 값은 x["+search+"]에 위치해 있습니다.");
+            System.out.println("선택한 값은 x["+x[-(search+1)]+"]에 위치해 있습니다.");
     }
 }

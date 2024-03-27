@@ -75,6 +75,15 @@ public class IntQueue {
         return -1;
     }
 
+    public int search(int x){
+        for(int i=1;i<=num;i++){
+            int idx = ((i-1)+front)%capacity;
+            if (que[idx]==x)
+                return i;
+        }
+        return 0;
+    }
+
     public int getCapacity() {
         return capacity;
     }
