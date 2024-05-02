@@ -27,7 +27,7 @@ public class 회의실배정 {
             @Override
             public int compare(MeetTing o1, MeetTing o2) {
                 if (o1.end==o2.end){
-                    return o1.start- o1.start;
+                    return o1.start- o2.start;
                 }
                 return o1.end - o2.end;
             }
