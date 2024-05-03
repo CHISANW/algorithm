@@ -1,4 +1,4 @@
-package BaekJoonAlgorithm.스택큐덱;
+package BaekJoonAlgorithm.스택큐덱.스택;
 
 import java.io.BufferedReader;
 import java.io.IOException;
