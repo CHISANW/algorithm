@@ -1,4 +1,4 @@
-package BaekJoonAlgorithm.DFS;
+package BaekJoonAlgorithm.그래프.DFS;
 
 import java.io.BufferedReader;
 import java.io.IOException;
