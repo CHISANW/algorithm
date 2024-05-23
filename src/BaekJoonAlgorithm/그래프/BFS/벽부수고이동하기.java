@@ -1,0 +1,67 @@
+package BaekJoonAlgorithm.그래프.BFS;
+
+import java.util.*;
+
+public class 벽부수고이동하기 {
+    static int[][] board;
+    static int[][][] visited;
+    static int[] dr = {-1,1,0,0};
+    static int[] dc = {0,0,-1,1};
+    static int n, m;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        m = sc.nextInt();
+
+        board = new int[n+1][m+1];
+        visited = new int[n+1][m+1][2];
+
+        for(int i= 1;i<=n;i++){
+            String line =sc.next();
+            for(int j =1;j<=m;j++){
+                board[i][j] = line.charAt(j-1)-'0';
+            }
+        }
+
+        Queue<Point> q = new LinkedList<>();
+        q.add(new Point(1,1,0));
+        visited[1][1][0] = 1;
+
+        while(!q.isEmpty()){
+            Point now = q.poll();
+            if(now.r==n && now.c==m){
+                System.out.println(visited[now.r][now.c][now.isBroken]);
+                return;
+            }
+
+            for(int i =0;i<4;i++) {
+                int nr = now.r + dr[i];
+                int nc = now.c + dc[i];
+
+                if (nr <= 0 || nr > n || nc <= 0 || nc > m) continue;
+                if (visited[nr][nc][now.isBroken] == 0) {
+                    if (board[nr][nc] == 0) {
+                        visited[nr][nc][now.isBroken] = visited[now.r][now.c][now.isBroken] + 1;
+                        q.add(new Point(nr, nc, now.isBroken));
+                    } else if (now.isBroken == 0 && board[nr][nc] == 1) {
+                        visited[nr][nc][1] = visited[now.r][now.c][0] + 1;
+                        q.add(new Point(nr, nc, 1));
+                    }
+                }
+            }
+        }
+        System.out.println(-1);
+    }
+
+    static class Point{
+        int r;
+        int c;
+        int isBroken;
+
+        public Point(int r, int c,int broken) {
+            this.r = r;
+            this.c = c;
+            this.isBroken = broken;
+        }
+    }
+}
