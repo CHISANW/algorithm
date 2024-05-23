@@ -4,8 +4,8 @@ out/
 !**/src/test/**/out/
 
 ##test
-src/BackJoon.java
 src/Main.java
+src/Programmers.java
 
 ### Eclipse ###
 .apt_generated
