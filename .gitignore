@@ -2,7 +2,7 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-
+src/TODO/**
 ##test
 src/Main.java
 src/Programmers.java
