@@ -1,4 +1,4 @@
-package BaekJoonAlgorithm;
+package BaekJoonAlgorithm.브루트포스;
 
 import java.util.*;
 
