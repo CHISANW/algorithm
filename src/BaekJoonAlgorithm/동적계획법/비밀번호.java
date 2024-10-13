@@ -1,4 +1,4 @@
-package BaekJoonAlgorithm.그래프;
+package BaekJoonAlgorithm.동적계획법;
 
 import java.util.Scanner;
 
