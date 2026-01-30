@@ -22,7 +22,7 @@ public class solve_15954 {
         double answer = Double.MAX_VALUE;
 
         while (k <=n){
-            for(int i =0; i<n-k;i++){
+            for(int i =0; i<=n-k;i++){
 
                 double m = getM(arr, i, n, k);
                 double b = getB(arr, m,i, n, k);
