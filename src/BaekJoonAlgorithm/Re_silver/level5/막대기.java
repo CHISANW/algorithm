@@ -1,4 +1,4 @@
-package BaekJoonAlgorithm.Re_silver3;
+package BaekJoonAlgorithm.Re_silver.level5;
 
 import java.util.*;
 
